@@ -1,7 +1,7 @@
 # WebTwainScanner
 Web Twain Scanner is a .Net-based solution for integrating TWAIN scanning capabilities into web applications. It provide a seamless way to intract with scanners and retrieve scanned images directly through a gui interface.
 
-## Features
+### Features
 - TWAIN-based scannig support.
 
 ### Todo
