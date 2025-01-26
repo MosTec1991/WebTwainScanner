@@ -256,6 +256,7 @@ partial class FrmScan
         pbViewScannedPage.Location = new System.Drawing.Point(5, 55);
         pbViewScannedPage.Name = "pbViewScannedPage";
         pbViewScannedPage.Size = new System.Drawing.Size(415, 474);
+        pbViewScannedPage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
         pbViewScannedPage.TabIndex = 0;
         pbViewScannedPage.TabStop = false;
         // 
@@ -271,6 +272,7 @@ partial class FrmScan
         Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
         StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
         Text = "Scan New Page";
+        Load += FrmScan_Load;
         groupBox1.ResumeLayout(false);
         groupBox2.ResumeLayout(false);
         groupBox3.ResumeLayout(false);

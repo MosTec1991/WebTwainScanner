@@ -388,4 +388,12 @@ public partial class FrmScan : Form
         ClearDeviceCaps();
         _ = GetDeviceCapsAsync(_cancellationTokenSource.Token);
     }
+
+    private void FrmScan_Load(object sender, EventArgs e)
+    {
+        this.Activate();
+        this.TopMost = true;
+        this.TopMost = false;
+        this.Focus();
+    }
 }
