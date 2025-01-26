@@ -6,6 +6,14 @@
         <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
         <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationIcon>ScannerIcon.ico</ApplicationIcon>
+        <Version>0.1.0</Version>
+        <Title>TWAIN Scanner App</Title>
+        <Authors>M. Athari Anaraki</Authors>
+        <RepositoryUrl>https://github.com/MosTec1991/WebTwainScanner</RepositoryUrl>
+        <Product>TwainWebScanner</Product>
+        <AssemblyVersion>0.1.0</AssemblyVersion>
+        <AssemblyName>TwainWebScanner</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
