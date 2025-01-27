@@ -143,8 +143,6 @@ public partial class FrmScan : Form
             {
                 return;
             }
-
-            this.Text = device.Name;
             
             List<int> commonDpi = [];
             List<ScanFeedOption> feedOptions = [new(PaperSource.Auto, "Auto")];
@@ -254,6 +252,7 @@ public partial class FrmScan : Form
     {
         List<MemoryStream> imageStream = [];
         btnScan.Enabled = false;
+        btnSend.Enabled = false;
         
         try
         {
@@ -279,8 +278,14 @@ public partial class FrmScan : Form
 
     private void DisplayThumbnails(List<MemoryStream> imageStream)
     {
+     
+        
         if (imageStream.Count == 0)
         {
+            if (pnlScanedPages.Controls.Count != 0)
+            {
+                btnSend.Enabled = Enabled;
+            }
             return;
         }
 
